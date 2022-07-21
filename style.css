@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@font-face{
+  font-family: 'transformers-font';
+  src: url('./fonts/Transformers\ Movie.ttf');
+}
+
+@font-face{
+  font-family: 'monster-font';
+  src: url('./fonts/monsterhunter.ttf');
+}
+
+@keyframes color {
+  0%   { background: #323232; }
+  20%  { background: #313131; }
+  40%  { background: #111111; }
+  60%  { background: #222222; }
+  80%  { background: #313131; }
+  100% { background: #323232; }
+}
+
+
+.robot{
+  font-family: 'transformers-font';
+}
+
+.gamer{
+  font-family: cursive;
+}
+
+
+.monster{
+  font-family: 'monster-font';
+}
+
+@media only screen and (max-width: 400px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    background: #323232;
+    animation: color 9s infinite linear;
+  }
+
+  header{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  
+    font-size: 3rem;
+    color: #fff;
+  }
+
+  header>p{
+    margin: 0;
+  }
+  
+  .game {
+    width: 100vw;
+    height: 100vw;
+    margin: 0 auto;
+    background-color: #243241;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr)
+  }
+  
+  .game>div {
+    border: 6px solid #17212b;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+body {
+  padding: 0;
+  margin: auto;
+  width:max-content;
+  background: #323232;
+  animation: color 9s infinite linear;
+}
+
+header{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  font-size: 4rem;
+  color: #fff;
+}
+
+header>p{
+  margin: 10px;
+}
+
+
+.game {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #243241;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr)
+}
+
+.game>div {
+  border: 6px solid #17212b;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}
